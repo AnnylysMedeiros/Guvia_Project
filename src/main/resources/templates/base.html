@@ -39,7 +39,7 @@
 		<div class="collapse navbar-dark navbar-collapse"
 			id="navbarResponsive">
 			<ul class="navbar-nav ms-auto">
-				<li class="nav-item"><a class="nav-link " href="index.html">Home</a>
+				<li class="nav-item"><a class="nav-link " th:href="@{index}">Home</a>
 				</li>
 				<li class="nav-item"><a class="nav-link" href="hospedagem.html">Hospedagem</a>
 				</li>
@@ -236,10 +236,4 @@
 	</div>
 </footer>
 
-<!-- Tradução para libras -->
-<div th:fragment="libras" vw class="enabled">
-	<div vw-access-button class="active"></div>
-	<div vw-plugin-wrapper>
-		<div class="vw-plugin-top-wrapper"></div>
-	</div>
-</div>
+

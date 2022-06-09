@@ -1,0 +1,218 @@
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head th:replace="~{base :: head}"></head>
+
+<body>
+   <nav th:replace="~{base :: header}"></nav>
+  
+  <div class="container">
+    <section class="row my-5">
+      <div class="col-12 col-lg-6">
+        <!-- <img src="img/ibirapuera.jpg" alt="Image" class="img-fluid tm-intro-img" /> -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/ibirapuera.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/gallery-img-02.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/the-town-01.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="tm-intro-text-container">
+          <h2 class="tm-text-primary mb-2 tm-section-title">Parque do Ibirapuera</h2>
+          <p class="mb-4 tm-intro-text">
+            Inaugurado em 1954 com uma área de 158 hectares (390 acres), entre as avenidas Pedro Álvares Cabral,
+            República do Líbano e IV Centenário, o Parque Ibirapuera é um parque tombado e patrimônio histórico de São
+            Paulo. Seus jardins foram desenhados pelo paisagista Otávio Augusto Teixeira Mendes, após o conceito e
+            anteprojeto do paisagista Roberto Burle Marx. Já as construções históricas como os pavilhões que abrigam
+            museus, o auditório, marquise entre outras foram concebidas pelo arquiteto Oscar Niemeyer com projetos
+            estruturais do engenheiro Joaquim Cardozo.</p>
+          <div class="tm-next">
+            <a href="https://parqueibirapuera.org/" class="tm-intro-text tm-btn-primary">Visite o site</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class=" mt-4">
+      <div class=" row rounded">
+        <div class="testando col-lg-6">
+          <h4 class="tm-text-primary mb-2">Horário de funcionamento e como chegar</h4>
+          <ul class="p-0 hora_parque">
+            <li class="mb-2"><strong> Horário de Funcionamento:</strong> 5h às 0h (aberto 24h de sábado para domingo)
+            </li>
+            <li><strong> Pedestres:</strong>
+              <ul>
+                <li>- Portões 2, 3, 4, 6, 7A e 10</li>
+                <li>- Av. Pedro Álvares Cabral, portões: 02, 03, 04, 09 e 10.</li>
+                <li>- Av. República do Líbano, portões: 07, 08 e 09A.</li>
+              </ul>
+            </li>
+            <li><strong> Veículos:</strong>
+              <ul>
+                <li>- Portões 3 e 7A</li>
+                <li>- Av. Pedro Álvares Cabral – Portões: 03 (livre mediante uso cartão zona azul), 07 e 10 (apenas a
+                  credenciados).</li>
+                <li>- Av. República do Líbano – Portão 07 (livre mediante uso cartão zona azul).</li>
+              </ul>
+            </li>
+            <li><strong> Horário dos Portões:</strong>
+              <ul>
+                <li>- Portões: 02, 03, 05 e 10, das 05h00 as 24h00.</li>
+                <li>- Portões: 04, 06 e 09, das 05h00 as 22h00.</li>
+                <li>- Portões: 07, 08 e 09A, das 06h00 as 20h00.</li>
+                <li>- Portão: 07A, das 07h00 as 17h00.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6 text-center">
+          <h4 class="tm-text-primary mb-2">Confira a localização no mapa:</h4>
+          <div id="map"></div>
+        </div>
+      </div>
+      <!-- <div class="col-lg-6 text-center">
+            <h4 class="tm-text-primary mb-2" id="demo">Busque no mapa:</h4>
+            <button onclick="getLocation()">Mapa local</button>
+            <div id="mapholder"></div>
+          </div>
+        </div> -->
+    </section>
+
+
+    <div class="row justify-content-center mt-5">
+      <div class="col-12 col-lg-8 mb-3">
+        <div class="be-comment-block">
+          <h4 class="tm-text-primary mb-4">Avaliação dos usuários</h4>
+          <div class="be-comment">
+            <div class="d-flex align-items-center">
+              <a class="" href="blog-detail-2.html"> <img src="img/02.jpeg" alt=""
+                  class="be-img-comment be-ava-comment">
+              </a>
+              <div class="ms-2"> Usuário: <span>Java</span></div>
+            </div>
+            <div class="">
+              <div>Classificacao: <span>4</span>
+              </div>
+              <div class="">
+                Data da experiência: <span> maio de 2022</span>
+              </div>
+              <div>
+                <p class="be-comment-text">Parque muito bonito Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit. Consequatur, quasi accusamus.</p>
+              </div>
+              <img class="imagem_avalia rounded" src="img/ibirapuera.jpg" alt="">
+              <img class="imagem_avalia rounded" src="img/ibirapuera.jpg" alt="">
+              <img class="imagem_avalia rounded" src="img/ibirapuera.jpg" alt="">
+            </div>
+            <hr>
+          </div>
+
+          <div class="be-comment">
+            <div class="d-flex align-items-center">
+              <a class="" href="blog-detail-2.html"> <img src="img/02.jpeg" alt=""
+                  class="be-img-comment be-ava-comment">
+              </a>
+              <div class="ms-2"> Usuário: <span>Java</span></div>
+            </div>
+            <div class="">
+              <div>Classificacao: <span>4</span>
+              </div>
+              <div class="">
+                Data da experiência: <span> maio de 2022</span>
+              </div>
+              <div>
+                <p class="be-comment-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
+                  tempore sit praesentium iusto fugiat? Exercitationem, enim praesentium. Voluptatem, commodi
+                  dolorem.</p>
+              </div>
+              <img class="imagem_avalia rounded" src="img/ibirapuera.jpg" alt="">
+              <img class="imagem_avalia rounded" src="img/ibirapuera.jpg" alt="">
+              <img class="imagem_avalia rounded" src="img/ibirapuera.jpg" alt="">
+            </div>
+            <hr>
+          </div>
+
+          <div class="be-comment">
+            <div class="d-flex align-items-center">
+              <a class="" href="blog-detail-2.html"> <img src="img/02.jpeg" alt=""
+                  class="be-img-comment be-ava-comment">
+              </a>
+              <div class="ms-2"> Usuário: <span>Java</span></div>
+            </div>
+            <div class="">
+              <div>Classificacao: <span>4</span>
+              </div>
+              <div class="">
+                Data da experiência: <span> maio de 2022</span>
+              </div>
+              <div>
+                <p class="be-comment-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <img class="imagem_avalia rounded" src="img/ibirapuera.jpg" alt="">
+              <img class="imagem_avalia rounded" src="img/ibirapuera.jpg" alt="">
+              <img class="imagem_avalia rounded" src="img/ibirapuera.jpg" alt="">
+            </div>
+            <hr>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-8 col-lg-4 mb-3">
+        <div class="avalie rounded pt-2 sticky-top">
+          <p>Ja visitou este local?</p>
+          <a href="" class="tm-intro-text tm-btn-primary py-3 px-5">Avalie também</a>
+          <img class="img-fluid" src="./img/minilogo.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<!-- Subir ao topo -->
+	<button th:replace="~{base :: scrollbutton}"></button>
+
+	<!-- footer -->
+	<footer th:replace="~{base :: footer}"></footer>
+
+	<!-- Tradução para libras -->
+	<div vw class="enabled">
+		<div vw-access-button class="active"></div>
+		<div vw-plugin-wrapper>
+			<div class="vw-plugin-top-wrapper"></div>
+		</div>
+	</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<!-- Script do tradutor para libras -->
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+<!-- Script do tradutor para libras -->
+</html>

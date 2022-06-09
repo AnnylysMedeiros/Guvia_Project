@@ -99,7 +99,7 @@ exampleCarousel.useControls();
 
 
 
-// google maps
+// Mapa do google com geolocalização
 var x = document.getElementById("demo");
 function getLocation() {
 	if (navigator.geolocation) {
@@ -144,111 +144,132 @@ function showError(error) {
 }
 
 
+// Mapa do google estatico
+function initMap() {
+	const uluru = { lat: -23.587363, lng: -46.657701 };
+	const map = new google.maps.Map(document.getElementById("map"), {
+		zoom: 14,
+		center: uluru,
+	});
+	const marker = new google.maps.Marker({
+		position: uluru,
+		map: map,
+	});
+}
+
+window.initMap = initMap;
+
+
 //   classificação de avaliação
 function Avaliar(estrela) {
- var url = window.location;
- url = url.toString()
- url = url.split("index.html");
- url = url[0];
+	var url = window.location;
+	url = url.toString()
+	url = url.split("index.html");
+	url = url[0];
 
- var s1 = document.getElementById("s1").src;
- var s2 = document.getElementById("s2").src;
- var s3 = document.getElementById("s3").src;
- var s4 = document.getElementById("s4").src;
- var s5 = document.getElementById("s5").src;
- var avaliacao = 0;
+	var s1 = document.getElementById("s1").src;
+	var s2 = document.getElementById("s2").src;
+	var s3 = document.getElementById("s3").src;
+	var s4 = document.getElementById("s4").src;
+	var s5 = document.getElementById("s5").src;
+	var avaliacao = 0;
 
-if (estrela == 5){ 
- if (s5 == url + "img/star0.png") {
- document.getElementById("s1").src = "img/star1.png";
- document.getElementById("s2").src = "img/star1.png";
- document.getElementById("s3").src = "img/star1.png";
- document.getElementById("s4").src = "img/star1.png";
- document.getElementById("s5").src = "img/star1.png";
- avaliacao = 5;
- } else {
- document.getElementById("s1").src = "img/star1.png";
- document.getElementById("s2").src = "img/star1.png";
- document.getElementById("s3").src = "img/star1.png";
- document.getElementById("s4").src = "img/star1.png";
- document.getElementById("s5").src = "img/star0.png";
- avaliacao = 4;
-}}
- 
- //ESTRELA 4
-if (estrela == 4){ 
- if (s4 == url + "img/star0.png") {
- document.getElementById("s1").src = "img/star1.png";
- document.getElementById("s2").src = "img/star1.png";
- document.getElementById("s3").src = "img/star1.png";
- document.getElementById("s4").src = "img/star1.png";
- document.getElementById("s5").src = "img/star0.png";
- avaliacao = 4;
- } else {
- document.getElementById("s1").src = "img/star1.png";
- document.getElementById("s2").src = "img/star1.png";
- document.getElementById("s3").src = "img/star1.png";
- document.getElementById("s4").src = "img/star0.png";
- document.getElementById("s5").src = "img/star0.png";
- avaliacao = 3;
-}}
+	if (estrela == 5) {
+		if (s5 == url + "img/star0.png") {
+			document.getElementById("s1").src = "img/star1.png";
+			document.getElementById("s2").src = "img/star1.png";
+			document.getElementById("s3").src = "img/star1.png";
+			document.getElementById("s4").src = "img/star1.png";
+			document.getElementById("s5").src = "img/star1.png";
+			avaliacao = 5;
+		} else {
+			document.getElementById("s1").src = "img/star1.png";
+			document.getElementById("s2").src = "img/star1.png";
+			document.getElementById("s3").src = "img/star1.png";
+			document.getElementById("s4").src = "img/star1.png";
+			document.getElementById("s5").src = "img/star0.png";
+			avaliacao = 4;
+		}
+	}
 
-//ESTRELA 3
-if (estrela == 3){ 
- if (s3 == url + "img/star0.png") {
- document.getElementById("s1").src = "img/star1.png";
- document.getElementById("s2").src = "img/star1.png";
- document.getElementById("s3").src = "img/star1.png";
- document.getElementById("s4").src = "img/star0.png";
- document.getElementById("s5").src = "img/star0.png";
- avaliacao = 3;
- } else {
- document.getElementById("s1").src = "img/star1.png";
- document.getElementById("s2").src = "img/star1.png";
- document.getElementById("s3").src = "img/star0.png";
- document.getElementById("s4").src = "img/star0.png";
- document.getElementById("s5").src = "img/star0.png";
- avaliacao = 2;
-}}
- 
-//ESTRELA 2
-if (estrela == 2){ 
- if (s2 == url + "img/star0.png") {
- document.getElementById("s1").src = "img/star1.png";
- document.getElementById("s2").src = "img/star1.png";
- document.getElementById("s3").src = "img/star0.png";
- document.getElementById("s4").src = "img/star0.png";
- document.getElementById("s5").src = "img/star0.png";
- avaliacao = 2;
- } else {
- document.getElementById("s1").src = "img/star1.png";
- document.getElementById("s2").src = "img/star0.png";
- document.getElementById("s3").src = "img/star0.png";
- document.getElementById("s4").src = "img/star0.png";
- document.getElementById("s5").src = "img/star0.png";
- avaliacao = 1;
-}}
- 
- //ESTRELA 1
-if (estrela == 1){ 
- if (s1 == url + "img/star0.png") {
- document.getElementById("s1").src = "img/star1.png";
- document.getElementById("s2").src = "img/star0.png";
- document.getElementById("s3").src = "img/star0.png";
- document.getElementById("s4").src = "img/star0.png";
- document.getElementById("s5").src = "img/star0.png";
- avaliacao = 1;
- } else {
- document.getElementById("s1").src = "img/star0.png";
- document.getElementById("s2").src = "img/star0.png";
- document.getElementById("s3").src = "img/star0.png";
- document.getElementById("s4").src = "img/star0.png";
- document.getElementById("s5").src = "img/star0.png";
- avaliacao = 0;
-}}
- 
- document.getElementById('rating').innerHTML = avaliacao;
- 
+	//ESTRELA 4
+	if (estrela == 4) {
+		if (s4 == url + "img/star0.png") {
+			document.getElementById("s1").src = "img/star1.png";
+			document.getElementById("s2").src = "img/star1.png";
+			document.getElementById("s3").src = "img/star1.png";
+			document.getElementById("s4").src = "img/star1.png";
+			document.getElementById("s5").src = "img/star0.png";
+			avaliacao = 4;
+		} else {
+			document.getElementById("s1").src = "img/star1.png";
+			document.getElementById("s2").src = "img/star1.png";
+			document.getElementById("s3").src = "img/star1.png";
+			document.getElementById("s4").src = "img/star0.png";
+			document.getElementById("s5").src = "img/star0.png";
+			avaliacao = 3;
+		}
+	}
+
+	//ESTRELA 3
+	if (estrela == 3) {
+		if (s3 == url + "img/star0.png") {
+			document.getElementById("s1").src = "img/star1.png";
+			document.getElementById("s2").src = "img/star1.png";
+			document.getElementById("s3").src = "img/star1.png";
+			document.getElementById("s4").src = "img/star0.png";
+			document.getElementById("s5").src = "img/star0.png";
+			avaliacao = 3;
+		} else {
+			document.getElementById("s1").src = "img/star1.png";
+			document.getElementById("s2").src = "img/star1.png";
+			document.getElementById("s3").src = "img/star0.png";
+			document.getElementById("s4").src = "img/star0.png";
+			document.getElementById("s5").src = "img/star0.png";
+			avaliacao = 2;
+		}
+	}
+
+	//ESTRELA 2
+	if (estrela == 2) {
+		if (s2 == url + "img/star0.png") {
+			document.getElementById("s1").src = "img/star1.png";
+			document.getElementById("s2").src = "img/star1.png";
+			document.getElementById("s3").src = "img/star0.png";
+			document.getElementById("s4").src = "img/star0.png";
+			document.getElementById("s5").src = "img/star0.png";
+			avaliacao = 2;
+		} else {
+			document.getElementById("s1").src = "img/star1.png";
+			document.getElementById("s2").src = "img/star0.png";
+			document.getElementById("s3").src = "img/star0.png";
+			document.getElementById("s4").src = "img/star0.png";
+			document.getElementById("s5").src = "img/star0.png";
+			avaliacao = 1;
+		}
+	}
+
+	//ESTRELA 1
+	if (estrela == 1) {
+		if (s1 == url + "img/star0.png") {
+			document.getElementById("s1").src = "img/star1.png";
+			document.getElementById("s2").src = "img/star0.png";
+			document.getElementById("s3").src = "img/star0.png";
+			document.getElementById("s4").src = "img/star0.png";
+			document.getElementById("s5").src = "img/star0.png";
+			avaliacao = 1;
+		} else {
+			document.getElementById("s1").src = "img/star0.png";
+			document.getElementById("s2").src = "img/star0.png";
+			document.getElementById("s3").src = "img/star0.png";
+			document.getElementById("s4").src = "img/star0.png";
+			document.getElementById("s5").src = "img/star0.png";
+			avaliacao = 0;
+		}
+	}
+
+	document.getElementById('rating').innerHTML = avaliacao;
+
 }
 
 
@@ -257,20 +278,20 @@ if (estrela == 1){
 // scroll button
 
 function subirTela() {
-    // window.scrollTo(0, 0); para subir rapidamente
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-    });
+	// window.scrollTo(0, 0); para subir rapidamente
+	window.scrollTo({
+		top: 0,
+		left: 0,
+		behavior: 'smooth'
+	});
 }
 
 function botaoScroll() {
-    if(window.scrollY <= 300) {
-        document.querySelector('.scrollbutton').style.display = 'none';
-    }else {
-        document.querySelector('.scrollbutton').style.display = 'block';
-    }
+	if (window.scrollY <= 300) {
+		document.querySelector('.scrollbutton').style.display = 'none';
+	} else {
+		document.querySelector('.scrollbutton').style.display = 'block';
+	}
 }
 
 window.addEventListener('scroll', botaoScroll);

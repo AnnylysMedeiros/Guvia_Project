@@ -1,48 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"> -->
-
-    <title>Guvia - Home</title>
-    <link rel="sortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="sortcut icon" href="./img/minilogo.png" type="image/png" />
-
-    <script src="components/header.js" type="text/javascript" defer></script>
-    <script src="components/footer.js" type="text/javascript" defer></script>
-</head>
+<head th:replace="~{base :: head}"></head>
 
 <body>
-    
-   <nav th:replace="~{base :: header}"></nav>
+	<nav th:replace="~{base :: header}"></nav>
 
-    <!-- inicio do carrossel -->
-    <header class="titulo_forum">
-            <!-- For demo purpose -->
-            <div class="row pt-5">
-                <div class="col-lg-12 mx-auto">
-                    <div class="text-white p-5 shadow-sm rounded banner">
-                        <h1 class="display-4">Fórum Guviers</h1>
-                        <p class="lead">Tem uma dúvida? deixe aqui a sua pergunta para que outro viajante possa responder, sabe a resposta de alguma
-                            pergunta? não deixe de ajudar, apoie nosso forum..</p>
+	<!-- inicio do carrossel -->
+	<header class="titulo_forum">
+		<!-- For demo purpose -->
+		<div class="row pt-5">
+			<div class="col-lg-12 mx-auto">
+				<div class="text-white p-5 shadow-sm rounded banner">
+					<h1 class="display-4">Fórum Guviers</h1>
+					<p class="lead">Tem uma dúvida? deixe aqui a sua pergunta para
+						que outro viajante possa responder, sabe a resposta de alguma
+						pergunta? não deixe de ajudar, apoie nosso forum..</p>
 
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- End -->
-    </header>
 
-    <!-- <article class="secao_perguntas">
+				</div>
+			</div>
+		</div>
+		<!-- End -->
+	</header>
+
+	<!-- <article class="secao_perguntas">
         <section class="caixa_perguntas">
             <h3>Dúvida sobre o Parque da Independência</h3>
             <p>
@@ -88,326 +70,320 @@
         </div> -->
 
 
-        <div class="container">
-            <div class="row blog">
-                <h1 class="center mx-auto text-center py-4">Seja um Guvier</h1>
-               
-               <div class="col-md-12">
-                    <div id="blogCarousel" class="carousel slide" data-ride="carousel">
-        
-                        <ol class="invisible carousel-indicators">
-                            <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#blogCarousel" data-slide-to="1"></li>
-                        </ol>
-        
-                        <!-- Carousel items -->
-                        <div class="carousel-inner">
-        
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                        <div class="our-team">
-                                            <div class="pic">
-                                                <img src="./img/02.jpeg" alt="foto de um viajante">
-                                            </div>
-                                            <div class="team-content">
-                                                <h3 class="title">Java</h3>
-                                                <span class="post">Marketing Cat Consultant</span>
-                                            </div>
-                                            <ul class="social">
-                                                <li>
-                                                    <a href="#" class="fa fa-envelope"></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-        
-                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                        <div class="our-team">
-                                            <div class="pic">
-                                                <img src="./img/01.jpg" alt="foto de um viajante">
-                                            </div>
-                                            <div class="team-content">
-                                                <h3 class="title">Anny</h3>
-                                                <span class="post">Marketing Consultant</span>
-                                            </div>
-                                            <ul class="social">
-                                                <li>
-                                                    <a href="#" class="fa fa-envelope"></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                        <div class="our-team">
-                                            <div class="pic">
-                                                <img src="./img/02.jpeg" alt="foto de um viajante">
-                                            </div>
-                                            <div class="team-content">
-                                                <h3 class="title">Java</h3>
-                                                <span class="post">Marketing Cat Consultant</span>
-                                            </div>
-                                            <ul class="social">
-                                                <li>
-                                                    <a href="#" class="fa fa-envelope"></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-        
-                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                        <div class="our-team">
-                                            <div class="pic">
-                                                <img src="./img/01.jpg" alt="foto de um viajante">
-                                            </div>
-                                            <div class="team-content">
-                                                <h3 class="title">Anny</h3>
-                                                <span class="post">Marketing Consultant</span>
-                                            </div>
-                                            <ul class="social">
-                                                <li>
-                                                    <a href="#" class="fa fa-envelope"></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                <!--.row-->
-                            </div>
-                            <!--.item-->
-        
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                        <div class="our-team">
-                                            <div class="pic">
-                                                <img src="./img/02.jpeg" alt="foto de um viajante">
-                                            </div>
-                                            <div class="team-content">
-                                                <h3 class="title">Ted Robbins</h3>
-                                                <span class="post">Law Expert</span>
-                                            </div>
-                                            <ul class="social">
-                                                <li>
-                                                    <a href="#" class="fa fa-envelope"></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-        
-                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                        <div class="our-team">
-                                            <div class="pic">
-                                                <img src="./img/02.jpeg" alt="foto de um viajante">
-                                            </div>
-                                            <div class="team-content">
-                                                <h3 class="title">Noel Flantier</h3>
-                                                <span class="post">Marketing Consultant</span>
-                                            </div>
-                                            <ul class="social">
-                                                <li>
-                                                    <a href="#" class="fa fa-envelope"></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                        <div class="our-team">
-                                            <div class="pic">
-                                                <img src="./img/02.jpeg" alt="foto de um viajante">
-                                            </div>
-                                            <div class="team-content">
-                                                <h3 class="title">Ernesto Appia</h3>
-                                                <span class="post">Team Leader</span>
-                                            </div>
-                                            <ul class="social">
-                                                <li>
-                                                    <a href="#" class="fa fa-envelope"></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-        
-                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                        <div class="our-team">
-                                            <div class="pic">
-                                                <img src="./img/02.jpeg" alt="foto de um viajante">
-                                            </div>
-                                            <div class="team-content">
-                                                <h3 class="title">Rosita Jimenez</h3>
-                                                <span class="post">Marketing Consultant</span>
-                                            </div>
-                                            <ul class="social">
-                                                <li>
-                                                    <a href="#" class="fa fa-envelope"></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--.row-->
-                            </div>
-                            <!--.item-->
-        
-                        </div>
-                        <!--.carousel-inner-->
-                    </div>
-                    <!--.Carousel-->
-        
-                </div>
-            </div>
-        </div>
-          </section>
-          <div class="container mt-5 mb-5">
-            <div class="row">
-                <div class="col-md-6 offset-md-3">
-                    <h4>Postagens recentes</h4>
-                    <ul class="timeline">
-                        <li>
-                            <a target="_blank" href="">Lugares românticos</a>
-                            <a href="#" class="float-right">21 March, 2020</a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.totoprayogo.com/#">Dúvida sobre o Parque da Independência</a>
-                            <a href="#" class="float-right">21 March, 2020</a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
-                        </li>
-                        <li>
-                            <a href="#">Valor do pacote para São Paulo</a>
-                            <a href="#" class="float-right">4 March, 2020</a>
-                            <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
-                        </li>
-                        <li>
-                            <a href="#">Horario da feira</a>
-                            <a href="#" class="float-right">1 April, 2020</a>
-                            <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
-                        </li>
-                        <li>
-                            <a href="#">Planetário do Ibirapuera</a>
-                            <a href="#" class="float-right">1 April, 2020</a>
-                            <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
-                        </li>
-                        <li>
-                            <a href="#">Transfer do aeroporto</a>
-                            <a href="#" class="float-right">1 April, 2020</a>
-                            <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
-                        </li>
-                        <li>
-                            <a href="#">Estadia em São Paulo</a>
-                            <a href="#" class="float-right">1 April, 2020</a>
-                            <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- comments -->
+	<div class="container">
+		<div class="row blog">
+			<h1 class="center mx-auto text-center py-4">Seja um Guvier</h1>
 
-        <div class="container">
-            <div class="be-comment-block">
-                <h1 class="comments-title">Comments (3)</h1>
-                <div class="be-comment">
-                    <div class="be-img-comment">
-                        <a href="blog-detail-2.html">
-                            <img src="./img/02.jpeg" alt="foto de um viajante" class="be-ava-comment">
-                        </a>
-                    </div>
-                    <div class="be-comment-content">
+			<div class="col-md-12">
+				<div id="blogCarousel" class="carousel slide" data-ride="carousel">
 
-                        <span class="be-comment-name">
-                            <a href="blog-detail-2.html">Ravi Sah</a>
-                        </span>
-                        <span class="be-comment-time">
-                            <i class="fa fa-clock-o"></i>
-                            May 27, 2015 at 3:14am
-                        </span>
+					<ol class="invisible carousel-indicators">
+						<li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#blogCarousel" data-slide-to="1"></li>
+					</ol>
 
-                        <p class="be-comment-text">
-                            Pellentesque gravida tristique ultrices.
-                            Sed blandit varius mauris, vel volutpat urna hendrerit id.
-                            Curabitur rutrum dolor gravida turpis tristique efficitur.
-                        </p>
-                    </div>
-                </div>
-                <div class="be-comment">
-                    <div class="be-img-comment">
-                        <a href="blog-detail-2.html">
-                            <img src="./img/bairro_bixiga.jpg" alt="bairro Bixiga em São Paulo" class="be-ava-comment">
-                        </a>
-                    </div>
-                    <div class="be-comment-content">
-                        <span class="be-comment-name">
-                            <a href="blog-detail-2.html">Phoenix, the Creative Studio</a>
-                        </span>
-                        <span class="be-comment-time">
-                            <i class="fa fa-clock-o"></i>
-                            May 27, 2015 at 3:14am
-                        </span>
-                        <p class="be-comment-text">
-                            Nunc ornare sed dolor sed mattis. In scelerisque dui a arcu mattis, at maximus eros commodo.
-                            Cras magna nunc, cursus lobortis luctus at, sollicitudin vel neque. Duis eleifend lorem non
-                            ant. Proin ut ornare lectus, vel eleifend est. Fusce hendrerit dui in turpis tristique
-                            blandit.
-                        </p>
-                    </div>
-                </div>
-                <div class="be-comment">
-                    <div class="be-img-comment">
-                        <a href="blog-detail-2.html">
-                            <img src="./img/01.jpg" alt="foto de um viajante" class="be-ava-comment">
-                        </a>
-                    </div>
-                    <div class="be-comment-content">
-                        <span class="be-comment-name">
-                            <a href="blog-detail-2.html">Cüneyt ŞEN</a>
-                        </span>
-                        <span class="be-comment-time">
-                            <i class="fa fa-clock-o"></i>
-                            May 27, 2015 at 3:14am
-                        </span>
-                        <p class="be-comment-text">
-                            Cras magna nunc, cursus lobortis luctus at, sollicitudin vel neque. Duis eleifend lorem non
-                            ant
-                        </p>
-                    </div>
-                </div>
-                <form class="form-block">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="form-group fl_icon">
-                                <div class="icon"><i class="fa fa-user"></i></div>
-                                <input class="form-input" type="text" placeholder="Your name">
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 fl_icon">
-                            <div class="form-group fl_icon">
-                                <div class="icon"><i class="fa fa-envelope-o"></i></div>
-                                <input class="form-input" type="text" placeholder="Your email">
-                            </div>
-                        </div>
-                        <div class="col-xs-12">
-                            <div class="form-group">
-                                <textarea class="form-input" required="" placeholder="Your text"></textarea>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary main_color pull-right">submit</a>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <!-- end comments -->
-<button th:replace="~{base :: scrollbutton}"></button>
+					<!-- Carousel items -->
+					<div class="carousel-inner">
 
+						<div class="carousel-item active">
+							<div class="row">
+								<div class="col-lg-3 col-md-6 col-sm-6">
+									<div class="our-team">
+										<div class="pic">
+											<img src="./img/02.jpeg" alt="foto de um viajante">
+										</div>
+										<div class="team-content">
+											<h3 class="title">Java</h3>
+											<span class="post">Marketing Cat Consultant</span>
+										</div>
+										<ul class="social">
+											<li><a href="#" class="fa fa-envelope"></a></li>
+										</ul>
+									</div>
+								</div>
 
-    <footer th:replace="~{base :: footer}"></footer>
+								<div class="col-lg-3 col-md-6 col-sm-6">
+									<div class="our-team">
+										<div class="pic">
+											<img src="./img/01.jpg" alt="foto de um viajante">
+										</div>
+										<div class="team-content">
+											<h3 class="title">Anny</h3>
+											<span class="post">Marketing Consultant</span>
+										</div>
+										<ul class="social">
+											<li><a href="#" class="fa fa-envelope"></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-6 col-sm-6">
+									<div class="our-team">
+										<div class="pic">
+											<img src="./img/02.jpeg" alt="foto de um viajante">
+										</div>
+										<div class="team-content">
+											<h3 class="title">Java</h3>
+											<span class="post">Marketing Cat Consultant</span>
+										</div>
+										<ul class="social">
+											<li><a href="#" class="fa fa-envelope"></a></li>
+										</ul>
+									</div>
+								</div>
 
+								<div class="col-lg-3 col-md-6 col-sm-6">
+									<div class="our-team">
+										<div class="pic">
+											<img src="./img/01.jpg" alt="foto de um viajante">
+										</div>
+										<div class="team-content">
+											<h3 class="title">Anny</h3>
+											<span class="post">Marketing Consultant</span>
+										</div>
+										<ul class="social">
+											<li><a href="#" class="fa fa-envelope"></a></li>
+										</ul>
+									</div>
+								</div>
+								<!--.row-->
+							</div>
+							<!--.item-->
+
+							<div class="carousel-item">
+								<div class="row">
+									<div class="col-lg-3 col-md-6 col-sm-6">
+										<div class="our-team">
+											<div class="pic">
+												<img src="./img/02.jpeg" alt="foto de um viajante">
+											</div>
+											<div class="team-content">
+												<h3 class="title">Ted Robbins</h3>
+												<span class="post">Law Expert</span>
+											</div>
+											<ul class="social">
+												<li><a href="#" class="fa fa-envelope"></a></li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6 col-sm-6">
+										<div class="our-team">
+											<div class="pic">
+												<img src="./img/02.jpeg" alt="foto de um viajante">
+											</div>
+											<div class="team-content">
+												<h3 class="title">Noel Flantier</h3>
+												<span class="post">Marketing Consultant</span>
+											</div>
+											<ul class="social">
+												<li><a href="#" class="fa fa-envelope"></a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-6 col-sm-6">
+										<div class="our-team">
+											<div class="pic">
+												<img src="./img/02.jpeg" alt="foto de um viajante">
+											</div>
+											<div class="team-content">
+												<h3 class="title">Ernesto Appia</h3>
+												<span class="post">Team Leader</span>
+											</div>
+											<ul class="social">
+												<li><a href="#" class="fa fa-envelope"></a></li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6 col-sm-6">
+										<div class="our-team">
+											<div class="pic">
+												<img src="./img/02.jpeg" alt="foto de um viajante">
+											</div>
+											<div class="team-content">
+												<h3 class="title">Rosita Jimenez</h3>
+												<span class="post">Marketing Consultant</span>
+											</div>
+											<ul class="social">
+												<li><a href="#" class="fa fa-envelope"></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--.row-->
+							</div>
+							<!--.item-->
+
+						</div>
+						<!--.carousel-inner-->
+					</div>
+					<!--.Carousel-->
+
+				</div>
+			</div>
+		</div>
+		</section>
+		<div class="container mt-5 mb-5">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<h4>Postagens recentes</h4>
+					<ul class="timeline">
+						<li><a target="_blank" href="">Lugares românticos</a> <a
+							href="#" class="float-right">21 March, 2020</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Quisque scelerisque diam non nisi semper, et elementum lorem
+								ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula
+								in sodales vehicula....</p></li>
+						<li><a target="_blank" href="https://www.totoprayogo.com/#">Dúvida
+								sobre o Parque da Independência</a> <a href="#" class="float-right">21
+								March, 2020</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Quisque scelerisque diam non nisi semper, et elementum lorem
+								ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula
+								in sodales vehicula....</p></li>
+						<li><a href="#">Valor do pacote para São Paulo</a> <a
+							href="#" class="float-right">4 March, 2020</a>
+							<p>Curabitur purus sem, malesuada eu luctus eget, suscipit
+								sed turpis. Nam pellentesque felis vitae justo accumsan, sed
+								semper nisi sollicitudin...</p></li>
+						<li><a href="#">Horario da feira</a> <a href="#"
+							class="float-right">1 April, 2020</a>
+							<p>Fusce ullamcorper ligula sit amet quam accumsan aliquet.
+								Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra
+								velit. Sed nec tempor nibh...</p></li>
+						<li><a href="#">Planetário do Ibirapuera</a> <a href="#"
+							class="float-right">1 April, 2020</a>
+							<p>Fusce ullamcorper ligula sit amet quam accumsan aliquet.
+								Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra
+								velit. Sed nec tempor nibh...</p></li>
+						<li><a href="#">Transfer do aeroporto</a> <a href="#"
+							class="float-right">1 April, 2020</a>
+							<p>Fusce ullamcorper ligula sit amet quam accumsan aliquet.
+								Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra
+								velit. Sed nec tempor nibh...</p></li>
+						<li><a href="#">Estadia em São Paulo</a> <a href="#"
+							class="float-right">1 April, 2020</a>
+							<p>Fusce ullamcorper ligula sit amet quam accumsan aliquet.
+								Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra
+								velit. Sed nec tempor nibh...</p></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- comments -->
+
+		<div class="container">
+			<div class="be-comment-block">
+				<h1 class="comments-title">Comments (3)</h1>
+				<div class="be-comment">
+					<div class="be-img-comment">
+						<a href="blog-detail-2.html"> <img src="./img/02.jpeg"
+							alt="foto de um viajante" class="be-ava-comment">
+						</a>
+					</div>
+					<div class="be-comment-content">
+
+						<span class="be-comment-name"> <a href="blog-detail-2.html">Ravi
+								Sah</a>
+						</span> <span class="be-comment-time"> <i class="fa fa-clock-o"></i>
+							May 27, 2015 at 3:14am
+						</span>
+
+						<p class="be-comment-text">Pellentesque gravida tristique
+							ultrices. Sed blandit varius mauris, vel volutpat urna hendrerit
+							id. Curabitur rutrum dolor gravida turpis tristique efficitur.</p>
+					</div>
+				</div>
+				<div class="be-comment">
+					<div class="be-img-comment">
+						<a href="blog-detail-2.html"> <img
+							src="./img/bairro_bixiga.jpg" alt="bairro Bixiga em São Paulo"
+							class="be-ava-comment">
+						</a>
+					</div>
+					<div class="be-comment-content">
+						<span class="be-comment-name"> <a href="blog-detail-2.html">Phoenix,
+								the Creative Studio</a>
+						</span> <span class="be-comment-time"> <i class="fa fa-clock-o"></i>
+							May 27, 2015 at 3:14am
+						</span>
+						<p class="be-comment-text">Nunc ornare sed dolor sed mattis.
+							In scelerisque dui a arcu mattis, at maximus eros commodo. Cras
+							magna nunc, cursus lobortis luctus at, sollicitudin vel neque.
+							Duis eleifend lorem non ant. Proin ut ornare lectus, vel eleifend
+							est. Fusce hendrerit dui in turpis tristique blandit.</p>
+					</div>
+				</div>
+				<div class="be-comment">
+					<div class="be-img-comment">
+						<a href="blog-detail-2.html"> <img src="./img/01.jpg"
+							alt="foto de um viajante" class="be-ava-comment">
+						</a>
+					</div>
+					<div class="be-comment-content">
+						<span class="be-comment-name"> <a href="blog-detail-2.html">Cüneyt
+								ŞEN</a>
+						</span> <span class="be-comment-time"> <i class="fa fa-clock-o"></i>
+							May 27, 2015 at 3:14am
+						</span>
+						<p class="be-comment-text">Cras magna nunc, cursus lobortis
+							luctus at, sollicitudin vel neque. Duis eleifend lorem non ant</p>
+					</div>
+				</div>
+				<form class="form-block">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6">
+							<div class="form-group fl_icon">
+								<div class="icon">
+									<i class="fa fa-user"></i>
+								</div>
+								<input class="form-input" type="text" placeholder="Your name">
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 fl_icon">
+							<div class="form-group fl_icon">
+								<div class="icon">
+									<i class="fa fa-envelope-o"></i>
+								</div>
+								<input class="form-input" type="text" placeholder="Your email">
+							</div>
+						</div>
+						<div class="col-xs-12">
+							<div class="form-group">
+								<textarea class="form-input" required="" placeholder="Your text"></textarea>
+							</div>
+						</div>
+						<a class="btn btn-primary main_color pull-right">submit</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- Subir ao topo -->
+		<button th:replace="~{base :: scrollbutton}"></button>
+
+		<!-- footer -->
+		<footer th:replace="~{base :: footer}"></footer>
+
+		<!-- Tradução para libras -->
+		<div vw class="enabled">
+			<div vw-access-button class="active"></div>
+			<div vw-plugin-wrapper>
+				<div class="vw-plugin-top-wrapper"></div>
+			</div>
+		</div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+	integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+	integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+	crossorigin="anonymous"></script>
 <!-- Script do tradutor para libras -->
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
+	new window.VLibras.Widget('https://vlibras.gov.br/app');
 </script>
 <!-- Script do tradutor para libras -->
 </html>
