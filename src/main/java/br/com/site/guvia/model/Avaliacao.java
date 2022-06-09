@@ -15,9 +15,9 @@ public class Avaliacao {
 	private Long id;
 	
 	private String nomeProduto;
-	private BigDecimal valorNegociado;
+	private int valorNegociado;
 	private LocalDate dataDaEntrega;
-	private String urlProduto;
+	
 	private String urlImagem;
 	private String descricao;
 
@@ -29,12 +29,12 @@ public class Avaliacao {
 		this.nomeProduto = nomeProduto;
 	}
 
-	public BigDecimal getValorNegociado() {
+	public int getValorNegociado() {
 		return valorNegociado;
 	}
 
-	public void setValorNegociado(BigDecimal valorNegociado) {
-		this.valorNegociado = valorNegociado;
+	public void setValorNegociado(int valorNegociado2) {
+		this.valorNegociado = valorNegociado2;
 	}
 
 	public LocalDate getDataDaEntrega() {
@@ -45,13 +45,6 @@ public class Avaliacao {
 		this.dataDaEntrega = dataDaEntrega;
 	}
 
-	public String getUrlProduto() {
-		return urlProduto;
-	}
-
-	public void setUrlProduto(String urlProduto) {
-		this.urlProduto = urlProduto;
-	}
 
 	public String getUrlImagem() {
 		return urlImagem;

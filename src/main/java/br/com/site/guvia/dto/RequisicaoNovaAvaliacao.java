@@ -14,26 +14,31 @@ public class RequisicaoNovaAvaliacao {
 	
 	@NotBlank //NotBlank.requisicaoNovoPedido.nomeProduto=não pode estar em branco
 	private String nomeProduto;
-	
-	@NotBlank
-	private String urlProduto;
-	
-	@NotBlank
-	private String urlImagem;
+	private int valorNegociado;
+	private LocalDate dataExperiencia;
 	private String descricao;
+	private String urlImagem;
 	
+	
+	public LocalDate getDataExperiencia() {
+		return dataExperiencia;
+	}
+	public void setDataExperiencia(LocalDate dataExperiencia) {
+		this.dataExperiencia = dataExperiencia;
+	}
+	public int getValorNegociado() {
+		return valorNegociado;
+	}
+	public void setValorNegociado(int valorNegociado) {
+		this.valorNegociado = valorNegociado;
+	}
 	public String getNomeProduto() {
 		return nomeProduto;
 	}
 	public void setNomeProduto(String nomeProduto) {
 		this.nomeProduto = nomeProduto;
 	}
-	public String getUrlProduto() {
-		return urlProduto;
-	}
-	public void setUrlProduto(String urlProduto) {
-		this.urlProduto = urlProduto;
-	}
+
 	public String getUrlImagem() {
 		return urlImagem;
 	}
@@ -51,7 +56,8 @@ public class RequisicaoNovaAvaliacao {
 		avaliacao.setDescricao(descricao);
 		avaliacao.setNomeProduto(nomeProduto);
 		avaliacao.setUrlImagem(urlImagem);
-		avaliacao.setUrlProduto(urlProduto);
+		avaliacao.setValorNegociado(valorNegociado);
+		avaliacao.setDataDaEntrega(dataExperiencia);
 		return avaliacao;
 	}
 

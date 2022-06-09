@@ -31,44 +31,48 @@
 <body>
 	<nav th:replace="~{base :: header}"></nav>
 
-	<div class="card mt-3">
-			<form th:object="${requisicaoNovaAvaliacao}" class="card-body" action="/avalia/novo" method="POST">
-				<div class="form-group">
-					<label for="nomeProduto">Produto</label> 
-					<input th:field="*{nomeProduto}" th:errorclass="is-invalid" class="form-control"
-						placeholder="nome do produto" /> <small>Informe o nome do
-						produto.</small>
-						<div th:errors="*{nomeProduto}" class="invalid-feedback">
-						Erros do nome do produto
-						</div>
-				</div>
-				<div class="form-group">
-					<label for="urlProduto">Url</label> 
-					<input th:field="*{urlProduto}" th:errorclass="is-invalid" class="form-control"
-						 placeholder="url do produto" /> <small>Procure
-						em um site o produto que você deseja e cole a url aqui</small>
-						<div th:errors="*{urlProduto}" class="invalid-feedback">
-						Erros da url
-						</div>
-				</div>
-				<div class="form-group">
-					<label for="urlImagem">Imagem</label>
-					 <input th:field="*{urlImagem}" th:errorclass="is-invalid" class="form-control"
-						 placeholder="url da imagem" /> <small>Copie
-						a url de uma boa imagem do produto e cole aqui</small>
-						<div th:errors="*{urlImagem}" class="invalid-feedback">
-						Erros da url da imagem
-						</div>
-				</div>
-				<div class="form-group">
-					<label for="descricao">Descrição</label>
-					<textarea th:field="*{descricao}" class="form-control" 
-						placeholder="adicione detalhes importantes para ajudar o comprador"></textarea>
-				</div>
-				<button class="btn btn-primary mt-3" type="submit">Cadastrar</button>
-			</form>
-		</div>
+
+
+	<div class="cont_form container">
+		<form th:object="${requisicaoNovaAvaliacao}" class="card-body"
+			action="/avalia/novo" method="POST">
+			<div class="form-group">
+				<label for="nomeProduto">Qual o seu nome?</label> <input
+					th:field="*{nomeProduto}" th:errorclass="is-invalid"
+					class="form-control" placeholder="Digite seu nome" />
+				<div th:errors="*{nomeProduto}" class="invalid-feedback">Erro
+					nome do usuario</div>
+			</div>
+
+			<div class="form-group ">
+				<label for="valorNegociado">De uma nota de 1 até 5:</label> <input
+					th:field="*{valorNegociado}" th:errorclass="is-invalid"
+					class="form-control" type="number" placeholder="">
+				<div class="invalid-feedback" th:errors="*{valorNegociado}">Erro
+					classificação</div>
+			</div>
+			
+			<div class="form-group">
+				<label for="dataExperiencia">Data da sua experiência: </label> <input
+					th:field="*{dataExperiencia}" class="form-control" type="month">
+			</div>
+
+			<div class="form-group">
+				<label for="descricao">Descrição</label>
+				<textarea th:field="*{descricao}" class="form-control"
+					placeholder="adicione detalhes importantes para ajudar o comprador"></textarea>
+			</div>
+
+			<div class="form-group">
+				<label for="urlImagem">Enviar uma foto:</label> <input
+					th:field="*{urlImagem}" type="file" class="form-control"
+					placeholder="url da imagem" /> <small>Não é obrigatório</small>
+			</div>
+			
+			<button class="btn btn-primary mt-3" type="submit">Enviar</button>
+		</form>
 	</div>
+
 
 	<footer th:replace="~{base :: footer}"></footer>
 
