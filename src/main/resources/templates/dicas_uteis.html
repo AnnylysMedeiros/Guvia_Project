@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head th:replace="~{base :: head}"></head>
+
+<body>
+	<nav th:replace="~{base :: header}"></nav>
+
+
+	<div class="container-fluid">
+		<div class="px-lg-5 dicas_uteis">
+
+			<!-- Conteudo -->
+			<section>
+				<div id="Forum" class="block my-5 pt-5">
+					<div class="container">
+						<div class="row">
+							<div
+								class="col-md-6 align-self-center order-md-2 order-1 mb-md-0 mb-4">
+								<h2 class="title">Dicas úteis para viajantes</h2>
+								<p>Viajar é muito bom, mas exige planejamento e organização.
+									Alguns turistas mais experientes desenvolveram práticas para
+									facilitar a vida na hora de arrumar as malas. Abaixo, você
+									confere dicas úteis para viajantes. Com elas, você pode ter
+									mais conforto e mais segurança em sua viagem, ou ainda saber
+									como aproveitar as promoções. Confira!</p>
+							</div>
+							<div
+								class="col-md-6 align-self-center text-center order-md-1 order-2">
+								<img
+									src="https://blog.buson.com.br/wp-content/uploads/2015/05/Viajante-600x400-1.jpg"
+									class="img-fluid" />
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Conteudo -->
+				<div class="container-fluid">
+					<p>1 – Para fazer uma viagem bem mais barata, considere viajar
+						uma semana antes ou uma semana depois de um grande feriado. São
+						nesses períodos que os lugares ficam mais vazios e com preços mais
+						atrativos.</p>
+					<p>2 – Compre sua passagem de ônibus online. Você compara
+						preços facilmente, escolhe seu assento, e só precisa ir à
+						rodoviária na hora de viajar.</p>
+					<p>3 – Leve a menor bagagem possível. O autor Tim Ferriss é
+						famoso por viajar várias semanas por diversos países com menos de
+						5 quilos de bagagem – incluindo um livro! Quase todo hotel oferece
+						itens de higiene pessoal de graça. Outros itens extras como, por
+						exemplo, o protetor solar podem ser comprados quando você chegar à
+						cidade.</p>
+					<p>4 – Levar uma mala vazia também significa que sobra mais
+						espaço para as compras.</p>
+					<p>5 – Proteja itens derramáveis (perfume, pasta de dente,
+						protetor solar) em saquinhos plás</p>
+					<p>6 – Coloque o cinto na gola da camisa social para proteger o
+						formato do colarinho.</p>
+					<p>7 – Leve com você no ônibus uma bagagem de mão com um
+						travesseiro, um agasalho que seja fácil de tirar e uma garrafinha
+						de água.</p>
+					<p>8 – Evite ir ao primeiro banheiro visível (por exemplo, o
+						mais próximo de onde o ônibus fará a parada). Sempre irá lotar.
+						Siga em frente, procurando o próximo.</p>
+					<p>9 – Use seu celular ou tablet para tirar fotos de todos os
+						seus documentos, reservas e assim por diante. Salve no seu e-mail
+						ou em qualquer “nuvem” (DropBox, Google Drive, etc.). Assim, mesmo
+						se você perder seus documentos e também o aparelho que usou para
+						fotografá-los, ainda poderá recuperar as imagens.</p>
+					<p>10 – Faça o mesmo para suas fotos de viagem. Carregue-as no
+						fim do dia em alguma “nuvem” da internet e você não correrá o
+						risco de perdê-las.</p>
+				</div>
+
+			</section>
+			<!-- Fim do conteudo -->
+
+			<!--forum-->
+			<div id="Forum" class="block my-5">
+				<div class="container">
+					<div class="row">
+						<div
+							class="col-md-6 align-self-center text-center order-md-1 order-2">
+							<img
+								src="https://blog.buson.com.br/wp-content/uploads/2014/12/Viajantes-600x351.jpg"
+								class="img-fluid" />
+						</div>
+						<div
+							class="col-md-6 align-self-center order-md-2 order-1 mb-md-0 mb-4">
+							<h2 class="title">Faça parte do fórum dos viajantes</h2>
+							<h4 class="subtitle">Compartiher sua experiência conosco</h4>
+
+							<a href="forum.html"
+								class="btn btn-primary button button-primary">Visitar fórum</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--fim forum-->
+		</div>
+	</div>
+
+	<!-- Subir ao topo -->
+	<button th:replace="~{base :: scrollbutton}"></button>
+
+	<!-- footer -->
+	<footer th:replace="~{base :: footer}"></footer>
+
+	<!-- Tradução para libras -->
+	<div vw class="enabled">
+		<div vw-access-button class="active"></div>
+		<div vw-plugin-wrapper>
+			<div class="vw-plugin-top-wrapper"></div>
+		</div>
+	</div>
+
+</body>
+<script
+	src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+	integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+	integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+	crossorigin="anonymous"></script>
+<!-- Script do tradutor para libras -->
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+	new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+<!-- Script do tradutor para libras -->
+
+</html>

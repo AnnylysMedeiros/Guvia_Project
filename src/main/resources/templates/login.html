@@ -1,0 +1,102 @@
+<!-- formulario login -->
+<div th:fragment="login" class="modal fade" id="exampleModalToggle"
+	aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+	tabindex="-1">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalToggleLabel">Possui uma
+					conta? Faça seu login</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal"
+					aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group container  ">
+						<label for="inputEmail3">Email</label> <input type="email"
+							class="form-control" id="inputEmail"
+							placeholder="Digite seu email">
+					</div>
+					<div class="form-group container ">
+						<label for="inputPassword3">Senha</label> <input type="password"
+							class="form-control" id="inputPassword3"
+							placeholder="Digite sua Senha"> <a href="#">
+							<p class="text-right">Esqueci minha senha</p>
+						</a>
+					</div>
+					<div class="form-group container">
+						<button type="button" class="btn btn-primary  btn-lg btn-block">Entrar</button>
+					</div>
+					<a th:href="@{/cadastro}" data-bs-target="#exampleModalToggle2"
+						data-bs-toggle="modal">
+						<p class="text-center">Não possuiu um conta? Cadastre-se</p>
+					</a>
+					<div class="text-center">
+						<a href="" class="ml-2"><img class="logofacebook"
+							src="./img/icon_facebook.png" alt="logo do facebook"></a> <a
+							href="" class="ml-3"><img src="./img/icon_google.png"
+							alt="logo do google"></a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- formulario cadastro -->
+<div th:fragment="cadastro" class="modal fade" id="exampleModalToggle2"
+	aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+	tabindex="-1">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalToggleLabel2">Cadastre-se</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal"
+					aria-label="Close"></button>
+			</div>
+			<div class="">
+				<form id="register-form" action="">
+					<div class="label_cadast email">
+						<label for="email">E-mail</label> <input type="email" name="email"
+							id="email" placeholder="Digite seu e-mail" data-min-length="2"
+							data-email-validate>
+					</div>
+					<div class="label_cadast nome">
+						<label for="name">Nome</label> <input type="text" name="name"
+							id="name" placeholder="Digite seu nome" data-required
+							data-min-length="3" data-max-length="16">
+					</div>
+					<div class="label_cadast">
+						<label for="lastname">Sobrenome</label> <input type="text"
+							name="lastname" id="lastname" placeholder="Digite seu sobrenome"
+							data-required data-only-letters>
+					</div>
+					<div class="label_cadast">
+						<label for="lastname">Senha</label> <input type="password"
+							name="password" id="password" placeholder="Digite sua senha"
+							data-password-validate data-required>
+					</div>
+					<div class="label_cadast">
+						<label for="passconfirmation">Confirmação de senha</label> <input
+							type="password" name="passconfirmation" id="passwordconfirmation"
+							placeholder="Digite novamente sua senha" data-equal="password">
+					</div>
+					<div class="termos">
+						<input type="checkbox" name="agreement" id="agreement"> <label
+							for="agreement" id="agreement-label">Eu li e aceito os <a
+							href="#">termos de uso</a></label>
+						<div class="registre">
+							<button type="submit" class=" btn btn-primary">Registrar</button>
+							<!-- <input id="btn-submit" type="submit" value="Registrar"> -->
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<a data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Voltar
+					para o Login</a>
+			</div>
+		</div>
+	</div>
+</div>
