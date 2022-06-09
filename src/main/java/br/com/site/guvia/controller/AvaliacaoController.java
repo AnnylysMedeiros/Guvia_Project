@@ -17,11 +17,11 @@ public class AvaliacaoController {
 	@Autowired
 	private AvaliacaoRepository repository;
 	
-	@GetMapping("/locadora")
-	public String locadora(Model model) {
+	@GetMapping("/parque_info")
+	public String parque_info(Model model) {
 		
 		List<Avaliacao> avaliacoes = repository.findAll();
 		model.addAttribute("avaliacoes", avaliacoes);
-		return "locadora";
+		return "parque_info";
 	}
 }

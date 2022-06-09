@@ -34,6 +34,6 @@ public class AvaliaController {
 		Avaliacao avalia = requisicao.toAvaliacao();
 		avaliacaoRepository.save(avalia);
 		
-		return "redirect:/locadora"; 
+		return "redirect:/parque_info"; 
 	}
 }

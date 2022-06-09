@@ -17,7 +17,7 @@ public class Avaliacao {
 	private int valorNegociado;
 	private LocalDate dataDaEntrega;
 	
-	private String urlImagem;
+//	private String urlImagem;
 	private String descricao;
 
 	public String getNomeProduto() {
@@ -45,13 +45,13 @@ public class Avaliacao {
 	}
 
 
-	public String getUrlImagem() {
-		return urlImagem;
-	}
-
-	public void setUrlImagem(String urlImagem) {
-		this.urlImagem = urlImagem;
-	}
+//	public String getUrlImagem() {
+//		return urlImagem;
+//	}
+//
+//	public void setUrlImagem(String urlImagem) {
+//		this.urlImagem = urlImagem;
+//	}
 
 	public String getDescricao() {
 		return descricao;

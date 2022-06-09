@@ -1,196 +1,155 @@
-  <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="pt-br">
 <head th:replace="~{base :: head}"></head>
 
 <body>
-   <nav th:replace="~{base :: header}"></nav>
-  
-  <div class="container">
-    <section class="row my-5">
-      <div class="col-12 col-lg-6">
-        <!-- <img src="img/ibirapuera.jpg" alt="Image" class="img-fluid tm-intro-img" /> -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./img/ibirapuera.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/gallery-img-02.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/the-town-01.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-      <div class="col-12 col-lg-6">
-        <div class="tm-intro-text-container">
-          <h2 class="tm-text-primary mb-2 tm-section-title">Parque do Ibirapuera</h2>
-          <p class="mb-4 tm-intro-text">
-            Inaugurado em 1954 com uma ·rea de 158 hectares (390 acres), entre as avenidas Pedro ¡lvares Cabral,
-            Rep˙blica do LÌbano e IV Centen·rio, o Parque Ibirapuera È um parque tombado e patrimÙnio histÛrico de S„o
-            Paulo. Seus jardins foram desenhados pelo paisagista Ot·vio Augusto Teixeira Mendes, apÛs o conceito e
-            anteprojeto do paisagista Roberto Burle Marx. J· as construÁıes histÛricas como os pavilhıes que abrigam
-            museus, o auditÛrio, marquise entre outras foram concebidas pelo arquiteto Oscar Niemeyer com projetos
-            estruturais do engenheiro Joaquim Cardozo.</p>
-          <div class="tm-next">
-            <a href="https://parqueibirapuera.org/" class="tm-intro-text tm-btn-primary">Visite o site</a>
-          </div>
-        </div>
-      </div>
-    </section>
+	<nav th:replace="~{base :: header}"></nav>
 
-    <section class=" mt-4">
-      <div class=" row rounded">
-        <div class="testando col-lg-6">
-          <h4 class="tm-text-primary mb-2">Hor·rio de funcionamento e como chegar</h4>
-          <ul class="p-0 hora_parque">
-            <li class="mb-2"><strong> Hor·rio de Funcionamento:</strong> 5h ‡s 0h (aberto 24h de s·bado para domingo)
-            </li>
-            <li><strong> Pedestres:</strong>
-              <ul>
-                <li>- Portıes 2, 3, 4, 6, 7A e 10</li>
-                <li>- Av. Pedro ¡lvares Cabral, portıes: 02, 03, 04, 09 e 10.</li>
-                <li>- Av. Rep˙blica do LÌbano, portıes: 07, 08 e 09A.</li>
-              </ul>
-            </li>
-            <li><strong> VeÌculos:</strong>
-              <ul>
-                <li>- Portıes 3 e 7A</li>
-                <li>- Av. Pedro ¡lvares Cabral ñ Portıes: 03 (livre mediante uso cart„o zona azul), 07 e 10 (apenas a
-                  credenciados).</li>
-                <li>- Av. Rep˙blica do LÌbano ñ Port„o 07 (livre mediante uso cart„o zona azul).</li>
-              </ul>
-            </li>
-            <li><strong> Hor·rio dos Portıes:</strong>
-              <ul>
-                <li>- Portıes: 02, 03, 05 e 10, das 05h00 as 24h00.</li>
-                <li>- Portıes: 04, 06 e 09, das 05h00 as 22h00.</li>
-                <li>- Portıes: 07, 08 e 09A, das 06h00 as 20h00.</li>
-                <li>- Port„o: 07A, das 07h00 as 17h00.</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+	<div class="container">
+		<section class="row mt-5 pt-5">
+			<div class="col-12 col-lg-6 ">
+				<!-- <img src="img/ibirapuera.jpg" alt="Image" class="img-fluid tm-intro-img" /> -->
+				<div id="carouselExampleIndicators" class="carousel slide "
+					data-bs-ride="true">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="0" class="active" aria-current="true"
+							aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="./img/ibirapuera.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="./img/ibirapuera2.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="./img/ibirapuera4.jpg" class="d-block w-100" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button"
+						data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button"
+						data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div class="tm-intro-text-container">
+					<h2 class="tm-text-primary mb-2 tm-section-title">Parque do
+						Ibirapuera</h2>
+					<p class="mb-4 tm-intro-text">Inaugurado em 1954 com uma √°rea
+						de 158 hectares (390 acres), entre as avenidas Pedro √Ålvares
+						Cabral, Rep√∫blica do L√≠bano e IV Centen√°rio, o Parque Ibirapuera √©
+						um parque tombado e patrim√¥nio hist√≥rico de S√£o Paulo. Seus
+						jardins foram desenhados pelo paisagista Ot√°vio Augusto Teixeira
+						Mendes, ap√≥s o conceito e anteprojeto do paisagista Roberto Burle
+						Marx. J√° as constru√ß√µes hist√≥ricas como os pavilh√µes que abrigam
+						museus, o audit√≥rio, marquise entre outras foram concebidas pelo
+						arquiteto Oscar Niemeyer com projetos estruturais do engenheiro
+						Joaquim Cardozo.</p>
+					<div class="tm-next">
+						<a href="https://parqueibirapuera.org/"
+							class="tm-intro-text tm-btn-primary">Visite o site</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <div class="col-lg-6 text-center">
-          <h4 class="tm-text-primary mb-2">Confira a localizaÁ„o no mapa:</h4>
-          <div id="map"></div>
-        </div>
-      </div>
-      <!-- <div class="col-lg-6 text-center">
-            <h4 class="tm-text-primary mb-2" id="demo">Busque no mapa:</h4>
-            <button onclick="getLocation()">Mapa local</button>
-            <div id="mapholder"></div>
-          </div>
-        </div> -->
-    </section>
+		<section class=" mt-4">
+			<div class=" row rounded">
+				<div class="testando col-lg-6">
+					<h4 class="tm-text-primary mb-2">Hor√°rio de funcionamento e
+						como chegar</h4>
+					<ul class="p-0 hora_parque">
+						<li class="mb-2"><strong> Hor√°rio de Funcionamento:</strong>
+							5h √†s 0h (aberto 24h de s√°bado para domingo)</li>
+						<li><strong> Pedestres:</strong>
+							<ul>
+								<li>- Port√µes 2, 3, 4, 6, 7A e 10</li>
+								<li>- Av. Pedro √Ålvares Cabral, port√µes: 02, 03, 04, 09 e
+									10.</li>
+								<li>- Av. Rep√∫blica do L√≠bano, port√µes: 07, 08 e 09A.</li>
+							</ul></li>
+						<li><strong> Ve√≠culos:</strong>
+							<ul>
+								<li>- Port√µes 3 e 7A</li>
+								<li>- Av. Pedro √Ålvares Cabral ‚Äì Port√µes: 03 (livre
+									mediante uso cart√£o zona azul), 07 e 10 (apenas a
+									credenciados).</li>
+								<li>- Av. Rep√∫blica do L√≠bano ‚Äì Port√£o 07 (livre mediante
+									uso cart√£o zona azul).</li>
+							</ul></li>
+						<li><strong> Hor√°rio dos Port√µes:</strong>
+							<ul>
+								<li>- Port√µes: 02, 03, 05 e 10, das 05h00 as 24h00.</li>
+								<li>- Port√µes: 04, 06 e 09, das 05h00 as 22h00.</li>
+								<li>- Port√µes: 07, 08 e 09A, das 06h00 as 20h00.</li>
+								<li>- Port√£o: 07A, das 07h00 as 17h00.</li>
+							</ul></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-6 text-center">
+					<h4 class="tm-text-primary mb-2">Confira a localiza√ß√£o no
+						mapa:</h4>
+					<div id="map"></div>
+				</div>
+			</div>
+
+		</section>
 
 
-    <div class="row justify-content-center mt-5">
-      <div class="col-12 col-lg-8 mb-3">
-        <div class="be-comment-block">
-          <h4 class="tm-text-primary mb-4">AvaliaÁ„o dos usu·rios</h4>
-          <div class="be-comment">
-            <div class="d-flex align-items-center">
-              <a class="" href="blog-detail-2.html"> <img src="img/02.jpeg" alt=""
-                  class="be-img-comment be-ava-comment">
-              </a>
-              <div class="ms-2"> Usu·rio: <span>Java</span></div>
-            </div>
-            <div class="">
-              <div>Classificacao: <span>4</span>
-              </div>
-              <div class="">
-                Data da experiÍncia: <span> maio de 2022</span>
-              </div>
-              <div>
-                <p class="be-comment-text">Parque muito bonito Lorem ipsum dolor sit amet consectetur, adipisicing
-                  elit. Consequatur, quasi accusamus.</p>
-              </div>
-              <img class="imagem_avalia rounded" src="img/ibirapuera.jpg" alt="">
-              <img class="imagem_avalia rounded" src="img/ibirapuera.jpg" alt="">
-              <img class="imagem_avalia rounded" src="img/ibirapuera.jpg" alt="">
-            </div>
-            <hr>
-          </div>
+		<div class="row justify-content-center mt-5">
+<div class="col-12 col-lg-8 mb-3">
+				<div class="be-comment-block">
+					<h4 class="tm-text-primary mb-4">Avalia√ß√£o dos usu√°rios</h4>
+					<div class="be-comment">
+						<div class="" th:each="avaliacao : ${avaliacoes}">
+							<div class="">
+								Usu√°rio: <span th:text="${avaliacao.nomeProduto}">Java</span>
+							</div>
+							<div class="">
+								Classifica√ß√£o: <span th:text="${avaliacao.valorNegociado}">5</span>
+							</div>
+							<div class="">
+								Data da experi√™ncia: <span th:text="${avaliacao.dataDaEntrega}">10/02/2020</span>
+							</div>
+							<div>Descri√ß√£o</div>
+							<div>
+								<textarea class="be-comment-text"
+									th:text="${avaliacao.descricao}">descri√ß√£o do pedido</textarea>
+							</div>
+							
+<!-- 							<div> -->
+<!-- 								<img class="imagem_avalia rounded " -->
+<!-- 									th:src="${avaliacao.urlImagem}" src="" /> -->
+<!-- 							</div> -->
+							<hr>
+						</div>
 
-          <div class="be-comment">
-            <div class="d-flex align-items-center">
-              <a class="" href="blog-detail-2.html"> <img src="img/02.jpeg" alt=""
-                  class="be-img-comment be-ava-comment">
-              </a>
-              <div class="ms-2"> Usu·rio: <span>Java</span></div>
-            </div>
-            <div class="">
-              <div>Classificacao: <span>4</span>
-              </div>
-              <div class="">
-                Data da experiÍncia: <span> maio de 2022</span>
-              </div>
-              <div>
-                <p class="be-comment-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
-                  tempore sit praesentium iusto fugiat? Exercitationem, enim praesentium. Voluptatem, commodi
-                  dolorem.</p>
-              </div>
-              <img class="imagem_avalia rounded" src="img/ibirapuera.jpg" alt="">
-              <img class="imagem_avalia rounded" src="img/ibirapuera.jpg" alt="">
-              <img class="imagem_avalia rounded" src="img/ibirapuera.jpg" alt="">
-            </div>
-            <hr>
-          </div>
-
-          <div class="be-comment">
-            <div class="d-flex align-items-center">
-              <a class="" href="blog-detail-2.html"> <img src="img/02.jpeg" alt=""
-                  class="be-img-comment be-ava-comment">
-              </a>
-              <div class="ms-2"> Usu·rio: <span>Java</span></div>
-            </div>
-            <div class="">
-              <div>Classificacao: <span>4</span>
-              </div>
-              <div class="">
-                Data da experiÍncia: <span> maio de 2022</span>
-              </div>
-              <div>
-                <p class="be-comment-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-              <img class="imagem_avalia rounded" src="img/ibirapuera.jpg" alt="">
-              <img class="imagem_avalia rounded" src="img/ibirapuera.jpg" alt="">
-              <img class="imagem_avalia rounded" src="img/ibirapuera.jpg" alt="">
-            </div>
-            <hr>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-8 col-lg-4 mb-3">
-        <div class="avalie rounded pt-2 sticky-top">
-          <p>Ja visitou este local?</p>
-          <a href="" class="tm-intro-text tm-btn-primary py-3 px-5">Avalie tambÈm</a>
-          <img class="img-fluid" src="./img/minilogo.png" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-8 col-lg-4 mb-3">
+				<div class="avalie rounded pt-2  sticky-top">
+					<p>Ja visitou este local?</p>
+					<a href="avalia/formulario" class="tm-intro-text tm-btn-primary py-3 px-5">Avalie
+						tamb√©m</a> <img class="img-fluid" src="./img/minilogo.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- Subir ao topo -->
 	<button th:replace="~{base :: scrollbutton}"></button>
@@ -198,7 +157,7 @@
 	<!-- footer -->
 	<footer th:replace="~{base :: footer}"></footer>
 
-	<!-- TraduÁ„o para libras -->
+	<!-- Tradu√ß√£o para libras -->
 	<div vw class="enabled">
 		<div vw-access-button class="active"></div>
 		<div vw-plugin-wrapper>
@@ -207,12 +166,32 @@
 	</div>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-<!-- Script do tradutor para libras -->
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
+
+<script
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+	defer></script>
+
+
+<script
+	src="https://maps.google.com/maps/api/js?key=AIzaSyCj0JSCdmBlmezLvpXVIHvVEUAqtdGeV9I&region=BR&callback=initMap">
+	
 </script>
-<!-- Script do tradutor para libras -->
+
+<!-- script bootstrap -->
+<script
+	src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+	integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+	crossorigin="anonymous">
+	
+</script>
+
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+	integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+	crossorigin="anonymous">
+	
+</script>
+
+<script src="./js/script.js"></script>
+
 </html>

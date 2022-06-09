@@ -49,4 +49,8 @@ public class IndexController {
 		return "dicas_uteis";
 	}
 	
+	@GetMapping("/locadora")
+	public String locadora() {	
+		return "locadora";
+	}
 }

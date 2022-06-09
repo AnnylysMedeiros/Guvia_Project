@@ -3,7 +3,7 @@
 <head th:replace="~{base :: head}"></head>
 
 <body>
-   <nav th:replace="~{base :: header}"></nav>
+	<nav th:replace="~{base :: header}"></nav>
 
 	<div class="container">
 		<section class="section_locadora">
@@ -12,11 +12,6 @@
 					<img class="img_locadora" src="./img/localizalogo.png"
 						alt="logo da Localiza"> Localiza
 				</h1>
-				<div>
-					<h4 id="demo">Agências próximas a você:</h4>
-					<button onclick="getLocation()">Mapa local</button>
-					<div id="mapholder"></div>
-				</div>
 			</article>
 
 			<article>
@@ -37,6 +32,13 @@
 				</div>
 			</article>
 		</section>
+		
+		
+		<div class="col-lg-6 text-center">
+					<h4 class="tm-text-primary mb-2">Confira a localização no
+						mapa:</h4>
+					<div id="mapholder"></div>
+				</div>
 
 		<form action="#" method="post" novalidate="novalidate">
 			<h4>Faça uma simulação de locação:</h4>
@@ -70,25 +72,25 @@
 				<div class="be-comment-block">
 					<h4 class="tm-text-primary mb-4">Avaliação dos usuários</h4>
 					<div class="be-comment">
-						<div class="" th:each="avaliacao : ${avaliacoes}">
+						<div class="" >
 							<div class="">
-								Usuário: <span th:text="${avaliacao.nomeProduto}">Java</span>
+								Usuário: <span >Java</span>
 							</div>
 							<div class="">
-								Classificação: <span th:text="${avaliacao.valorNegociado}">5</span>
+								Classificação: <span >5</span>
 							</div>
 							<div class="">
-								Data da experiência: <span th:text="${avaliacao.dataDaEntrega}">10/02/2020</span>
+								Data da experiência: <span >10/02/2020</span>
 							</div>
 							<div>Descrição</div>
 							<div>
 								<textarea class="be-comment-text"
-									th:text="${avaliacao.descricao}">descrição do pedido</textarea>
+									>descrição do pedido</textarea>
 							</div>
 							<div class="col-12 col-sm-4"></div>
 							<div>
 								<img class="imagem_avalia rounded "
-									th:src="${avaliacao.urlImagem}" src="" />
+									 src="" />
 							</div>
 							<hr>
 						</div>
@@ -96,8 +98,6 @@
 					</div>
 				</div>
 			</div>
-
-
 
 
 			<div class="avalie col-12 col-lg-4 tm-next rounded pt-2">
@@ -146,8 +146,12 @@
 
 <!-- Script google maps -->
 <script
-	src="https://maps.google.com/maps/api/js?key=AIzaSyCj0JSCdmBlmezLvpXVIHvVEUAqtdGeV9I&region=BR&callback=initMap">
-	
-</script>
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+  defer></script>
+
+
+<script
+  src="https://maps.google.com/maps/api/js?key=AIzaSyCj0JSCdmBlmezLvpXVIHvVEUAqtdGeV9I&region=BR&callback=initMap">
+  </script>
 
 </html>
