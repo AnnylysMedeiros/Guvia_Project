@@ -24,7 +24,6 @@ public class AvaliaController {
 	public String formulario(RequisicaoNovaAvaliacao requisicao) {
 		return "avalia/formulario";
 	}
-
 	
 	@PostMapping("novo")
 	public String novo(@Valid RequisicaoNovaAvaliacao requisicao, BindingResult result){
