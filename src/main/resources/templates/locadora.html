@@ -32,13 +32,12 @@
 				</div>
 			</article>
 		</section>
-		
-		
+
+
 		<div class="col-lg-6 text-center">
-					<h4 class="tm-text-primary mb-2">Confira a localização no
-						mapa:</h4>
-					<div id="mapholder"></div>
-				</div>
+			<h4 class="tm-text-primary mb-2">Confira a localização no mapa:</h4>
+			<div id="mapholder"></div>
+		</div>
 
 		<form action="#" method="post" novalidate="novalidate">
 			<h4>Faça uma simulação de locação:</h4>
@@ -72,25 +71,23 @@
 				<div class="be-comment-block">
 					<h4 class="tm-text-primary mb-4">Avaliação dos usuários</h4>
 					<div class="be-comment">
-						<div class="" >
+						<div class="">
 							<div class="">
-								Usuário: <span >Java</span>
+								Usuário: <span>Java</span>
 							</div>
 							<div class="">
-								Classificação: <span >5</span>
+								Classificação: <span>5</span>
 							</div>
 							<div class="">
-								Data da experiência: <span >10/02/2020</span>
+								Data da experiência: <span>10/02/2020</span>
 							</div>
 							<div>Descrição</div>
 							<div>
-								<textarea class="be-comment-text"
-									>descrição do pedido</textarea>
+								<textarea class="be-comment-text">descrição do pedido</textarea>
 							</div>
 							<div class="col-12 col-sm-4"></div>
 							<div>
-								<img class="imagem_avalia rounded "
-									 src="" />
+								<img class="imagem_avalia rounded " src="" />
 							</div>
 							<hr>
 						</div>
@@ -109,7 +106,13 @@
 		</div>
 	</div>
 
-	<button th:replace="~{base :: scrollbutton}"></button>
+	<div class="d-flex justify-content-end">
+		<button th:fragment="scrollbutton" onclick="subirTela()"
+			class="scrollbutton">
+			<i class="fa-solid fa-chevron-up"></i> <span class="visually-hidden">Rolar
+				para cima</span>
+		</button>
+	</div>
 
 	<footer th:replace="~{base :: footer}"></footer>
 
@@ -131,8 +134,7 @@
 	crossorigin="anonymous">
 	
 </script>
-<script
-	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+<script	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
 	integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
 	crossorigin="anonymous">
 	
@@ -145,13 +147,13 @@
 <!-- Script do tradutor para libras -->
 
 <!-- Script google maps -->
-<script
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-  defer></script>
+<script	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+	defer></script>
 
 
 <script
-  src="https://maps.google.com/maps/api/js?key=AIzaSyCj0JSCdmBlmezLvpXVIHvVEUAqtdGeV9I&region=BR&callback=initMap">
-  </script>
+	src="https://maps.google.com/maps/api/js?key=AIzaSyCj0JSCdmBlmezLvpXVIHvVEUAqtdGeV9I&region=BR&callback=initMap">
+	
+</script>
 
 </html>

@@ -13,7 +13,7 @@
 					<div class="text-white p-5 shadow-sm rounded banner">
 						<h1 class="display-4">Anuncie aqui</h1>
 						<p class="lead">Guvia está aberta a parcerias de publicidades
-							e divulgações que interessem ao seu público.</p>	
+							e divulgações que interessem ao seu público.</p>
 					</div>
 				</div>
 			</div>
@@ -34,7 +34,8 @@
 							<h5>
 								<a href="parque_info" class="text-dark">Parque Ibirapuera</a>
 							</h5>
-							<p class="small text-muted mb-0">Localizado no bairro Vila Mariana</p>
+							<p class="small text-muted mb-0">Localizado no bairro Vila
+								Mariana</p>
 							<div
 								class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
 								<p class="small mb-0">
@@ -57,7 +58,8 @@
 							<h5>
 								<a href="#" class="text-dark">Jardim Botânico</a>
 							</h5>
-							<p class="small text-muted mb-0">Localizado no bairro Vila Água Funda</p>
+							<p class="small text-muted mb-0">Localizado no bairro Vila
+								Água Funda</p>
 							<div
 								class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
 								<p class="small mb-0">
@@ -104,7 +106,8 @@
 							<h5>
 								<a href="#" class="text-dark">Parque Buenos Aires</a>
 							</h5>
-							<p class="small text-muted mb-0">Localizado no bairro Higienópolis</p>
+							<p class="small text-muted mb-0">Localizado no bairro
+								Higienópolis</p>
 							<div
 								class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
 								<p class="small mb-0">
@@ -118,42 +121,48 @@
 					</div>
 				</div>
 
-<!-- 					<div class="col-xl-3 col-lg-4 col-md-6 mb-4"> -->
-<!-- 						<div class="bg-white rounded shadow-sm"> -->
-<!-- 							<img src="./img/Parque_Independência.jpg" -->
-<!-- 								alt="imagem do Parque da Independência" -->
-<!-- 								class="img-fluid card-img-top"> -->
-<!-- 							<div class="p-4"> -->
-<!-- 								<h5> -->
-<!-- 									<a href="#" class="text-dark">Parque da Independência</a> -->
-<!-- 								</h5> -->
-<!-- 								<p class="small text-muted mb-0">Lorem ipsum dolor sit amet, -->
-<!-- 									consectetur adipisicing elit</p> -->
-<!-- 								<div -->
-<!-- 									class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4"> -->
-<!-- 									<p class="small mb-0"> -->
-<!-- 										<i class="fa fa-picture-o mr-2"></i><span -->
-<!-- 											class="font-weight-bold">Avaliação dos usuários:</span> -->
-<!-- 									</p> -->
-<!-- 									<div -->
-<!-- 										class="badge badge-danger px-3 rounded-pill font-weight-normal">4,6</div> -->
-<!-- 								</div> -->
-<!-- 							</div> -->
-<!-- 						</div> -->
-<!-- 					</div> -->
+				<!-- 					<div class="col-xl-3 col-lg-4 col-md-6 mb-4"> -->
+				<!-- 						<div class="bg-white rounded shadow-sm"> -->
+				<!-- 							<img src="./img/Parque_Independência.jpg" -->
+				<!-- 								alt="imagem do Parque da Independência" -->
+				<!-- 								class="img-fluid card-img-top"> -->
+				<!-- 							<div class="p-4"> -->
+				<!-- 								<h5> -->
+				<!-- 									<a href="#" class="text-dark">Parque da Independência</a> -->
+				<!-- 								</h5> -->
+				<!-- 								<p class="small text-muted mb-0">Lorem ipsum dolor sit amet, -->
+				<!-- 									consectetur adipisicing elit</p> -->
+				<!-- 								<div -->
+				<!-- 									class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4"> -->
+				<!-- 									<p class="small mb-0"> -->
+				<!-- 										<i class="fa fa-picture-o mr-2"></i><span -->
+				<!-- 											class="font-weight-bold">Avaliação dos usuários:</span> -->
+				<!-- 									</p> -->
+				<!-- 									<div -->
+				<!-- 										class="badge badge-danger px-3 rounded-pill font-weight-normal">4,6</div> -->
+				<!-- 								</div> -->
+				<!-- 							</div> -->
+				<!-- 						</div> -->
+				<!-- 					</div> -->
 
-					
-			
-<!-- 				<div class="py-5 text-center"> -->
-<!-- 					<a href="#" class="btn btn-dark px-5 py-3 text-uppercase">Show -->
-<!-- 						me more</a> -->
-<!-- 				</div> -->
+
+
+				<!-- 				<div class="py-5 text-center"> -->
+				<!-- 					<a href="#" class="btn btn-dark px-5 py-3 text-uppercase">Show -->
+				<!-- 						me more</a> -->
+				<!-- 				</div> -->
 			</div>
 		</div>
 	</div>
 
-	<!-- Subir ao topo -->
-	<button th:replace="~{base :: scrollbutton}"></button>
+	<div class="d-flex justify-content-end">
+		<button th:fragment="scrollbutton" onclick="subirTela()"
+			class="scrollbutton">
+			<i class="fa-solid fa-chevron-up"></i> <span class="visually-hidden">Rolar
+				para cima</span>
+		</button>
+	</div>
+
 	<!-- footer -->
 	<footer th:replace="~{base :: footer}"></footer>
 

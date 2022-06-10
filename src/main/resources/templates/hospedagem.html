@@ -14,7 +14,7 @@
 					<div class="text-white p-5 shadow-sm rounded banner">
 						<h1 class="display-4">Anuncie aqui</h1>
 						<p class="lead">Guvia está aberta a parcerias de publicidades
-							e divulgações que interessem ao seu público. </p>
+							e divulgações que interessem ao seu público.</p>
 					</div>
 				</div>
 			</div>
@@ -160,8 +160,13 @@
 		</div>
 	</div>
 
-	<!-- Subir ao topo -->
-	<button th:replace="~{base :: scrollbutton}"></button>
+	<div class="d-flex justify-content-end">
+		<button th:fragment="scrollbutton" onclick="subirTela()"
+			class="scrollbutton">
+			<i class="fa-solid fa-chevron-up"></i> <span class="visually-hidden">Rolar
+				para cima</span>
+		</button>
+	</div>
 
 	<!-- footer -->
 	<footer th:replace="~{base :: footer}"></footer>

@@ -224,13 +224,20 @@
 
 				</div>
 				<div class="py-5 text-center">
-					<a href="#" class="btn btn-dark px-5 py-3 text-uppercase">Mostre mais</a>
+					<a href="#" class="btn btn-dark px-5 py-3 text-uppercase">Mostre
+						mais</a>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<button th:replace="~{base :: scrollbutton}"></button>
+	<div class="d-flex justify-content-end">
+		<button th:fragment="scrollbutton" onclick="subirTela()"
+			class="scrollbutton">
+			<i class="fa-solid fa-chevron-up"></i> <span class="visually-hidden">Rolar
+				para cima</span>
+		</button>
+	</div>
 
 	<footer th:replace="~{base :: footer}"></footer>
 
