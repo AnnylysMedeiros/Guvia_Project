@@ -152,8 +152,12 @@
 		</div>
 	</div>
 
-	<!-- Subir ao topo -->
-	<button th:replace="~{base :: scrollbutton}"></button>
+<div class="d-flex justify-content-end">
+<button th:fragment="scrollbutton" onclick="subirTela()"
+	class="scrollbutton">
+	<i class="fa-solid fa-chevron-up"></i>
+</button>
+</div>
 
 	<!-- footer -->
 	<footer th:replace="~{base :: footer}"></footer>
